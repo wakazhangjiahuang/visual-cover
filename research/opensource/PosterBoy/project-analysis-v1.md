@@ -1,31 +1,60 @@
-# PosterBoy 项目分析
+# PosterBoy
 
-## 项目定位
-自主设计导演系统。
+## Source
+- Project type: AI poster generation / design-agent workflow reference
+- Use in visual-cover: agent orchestration reference only
 
-## Agent流程
-Image → Vision → Creative Director → Copywriter → Typography → Layout → Critique Loop
+## Extractable modules
 
-## 核心提取
+### 1. Vision analysis
+Input:
+- reference image
+- subject
+- composition
+- empty space
+- text area
 
-### Vision Agent
-分析主体、空白区域、安全区域。
+Output:
+- visual structure
+- layout constraints
+- content hierarchy
 
-### Creative Director
-生成多个设计方向并选择方案。
+### 2. Creative planning
+Input:
+- platform
+- audience
+- content goal
 
-### Typography Agent
-负责字体组合、字号、字重。
+Output:
+- cover directions
+- layout candidates
+- visual strategy
 
-### Layout Agent
-负责位置坐标和空间组织。
+### 3. Typography planning
+Record:
+- font category
+- size hierarchy
+- weight contrast
+- readability
 
-### Critique Loop
-生成后检查并修复。
+### 4. Layout planning
+Record:
+- grid
+- alignment
+- safe area
+- information density
 
-## visual-cover应用
-用于封面A/B测试：
-方案生成 → 视觉评分 → 修正。
+### 5. Review loop
+Check:
+- readability
+- visual focus
+- platform suitability
+- brand consistency
 
-## 禁止
-不迁移具体海报内容，仅学习Agent工作流。
+## visual-cover mapping
+Used by:
+Layout DNA Engine → GPT Image 2.5 Production → A/B evaluation
+
+## Boundary
+Only extract workflow and evaluation method.
+Do not copy generated posters, assets, text, or brand elements.
