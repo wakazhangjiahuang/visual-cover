@@ -1,3 +1,5 @@
+> **DEPRECATED FOR WECHAT CHANNELS:** This legacy file describes WeChat Official Accounts (公众号), not WeChat Channels (视频号). For B-mode video cover strategy, use `research/platform-intelligence/wechat-channels/platform-algorithm-visual-rule-v2.md`. Do not route video-channel work to this file.
+
 # 微信公众号与内容视觉规则
 
 ## 分发入口
