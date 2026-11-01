@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-11-01",
+  "sources": [
+    {
+      "id": "CAC-ALGO-2025",
+      "platforms": [
+        "douyin",
+        "xiaohongshu",
+        "wechat_channels"
+      ],
+      "type": "official_regulator",
+      "url": "https://www.cac.gov.cn/2025-05/22/c_1749536203490537.htm",
+      "supports": "Algorithm governance; video-channel friends+algorithm recommendation; platform transparency",
+      "limits": "No exact weights or cover CTR thresholds"
+    },
+    {
+      "id": "CAC-AI-LABEL",
+      "platforms": [
+        "douyin",
+        "xiaohongshu",
+        "wechat_channels"
+      ],
+      "type": "official_regulator",
+      "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+      "supports": "AI generated/synthetic content explicit and implicit labelling",
+      "limits": "Follow current platform publish UI and applicable rules"
+    },
+    {
+      "id": "DY-ALGO",
+      "platforms": [
+        "douyin"
+      ],
+      "type": "official_platform",
+      "url": "https://trust.douyin.com/algorithm/",
+      "supports": "Recall, ranking, history/content features, time context, interaction prediction, diversity adjustment",
+      "limits": "Simplified public explainer; no weights"
+    },
+    {
+      "id": "DY-TRUST",
+      "platforms": [
+        "douyin"
+      ],
+      "type": "official_platform",
+      "url": "https://trust.douyin.com/transparency",
+      "supports": "Algorithm transparency, quality content and governance",
+      "limits": "No cover formula"
+    },
+    {
+      "id": "DY-AGREEMENT",
+      "platforms": [
+        "douyin"
+      ],
+      "type": "official_platform",
+      "url": "https://www.douyin.com/draft/douyin_agreement/douyin_agreement_user.html?id=6773906068725565448&ug_source=microsoft_dy_360dh",
+      "supports": "2026-02-20 effective agreement; AI content label and misleading content rules",
+      "limits": "Check current version at publish time"
+    },
+    {
+      "id": "WX-CHANNELS",
+      "platforms": [
+        "wechat_channels"
+      ],
+      "type": "official_regulator",
+      "url": "https://www.cac.gov.cn/2025-05/22/c_1749536203490537.htm",
+      "supports": "Friends recommendation + algorithm recommendation",
+      "limits": "No weights or share thresholds"
+    },
+    {
+      "id": "XHS-GENRANK",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "type": "primary_research",
+      "url": "https://arxiv.org/html/2505.04180v2",
+      "supports": "Explore Feed cascade ranking and example features",
+      "limits": "No creator-facing weights"
+    },
+    {
+      "id": "XHS-SEARCH-KDD26",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "type": "primary_research",
+      "url": "https://arxiv.org/pdf/2512.00968",
+      "supports": "Five-level query-note relevance; search semantic analysis; CES in search experiment",
+      "limits": "CES is not a global public weight formula"
+    },
+    {
+      "id": "XHS-NOTELLM",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "type": "primary_research",
+      "url": "https://arxiv.org/html/2403.01744v1",
+      "supports": "Note semantics, summary, category/hashtag generation",
+      "limits": "No tag-count rule"
+    },
+    {
+      "id": "XHS-IDPROXY",
+      "platforms": [
+        "xiaohongshu"
+      ],
+      "type": "primary_research",
+      "url": "https://arxiv.org/html/2603.01590v1",
+      "supports": "Multimodal cold-start CTR research",
+      "limits": "Not a creator control panel"
+    }
+  ],
+  "policy": "GitHub repositories are implementation evidence only. No fixed traffic-pool, CTR, watch-time or ranking-weight claims."
+}
